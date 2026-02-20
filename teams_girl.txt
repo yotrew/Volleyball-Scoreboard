@@ -1,0 +1,238 @@
+企管大女
+彭OO  test@hotmail.com    091234567
+顏OO  test@hotmail.com   091234567	XXX
+
+鄧OO  test@msn.com   091234567 XXX
+鄧OO  彭OO  方OO  王OO  嚴OO
+林OO  李OO  顏OO  楊OO  林OO
+曹OO  陳OO  李OO  曾OO
+[end]
+
+企管小女
+李OO  test@hotmail.com    091234567  XXX
+陳OO  test@hotmail.com    091234567  XXX
+
+李OO  test@hotmail.com    091234567  XXX
+陳OO  黃OO  吳OO  朱OO  吳OO
+吳OO  徐OO  簡OO  鄭OO  許OO
+劉OO  蔡OO  林OO  黃OO  蔡OO
+李OO 陳OO  李OO  王OO
+[end]
+
+法律女排
+林OO  test@hotmail.com    091234567 XXX
+黃OO  test@hotmail.com  091234567 XXX
+
+柯OO  test@yahoo.com.tw  091234567 XXX
+黃OO  洪OO  劉OO  徐OO  林OO
+柯OO  林OO  譚OO 鄭OO  黃OO
+郭OO  尤OO  蔡OO  黃OO  許OO
+王OO 沈OO  曾OO  蔡OO  王OO
+曹OO  孫OO  許OO
+[end]
+
+中文女排
+蕭OO  test@yahoo.com.tw 091234567 XXX
+吳OO  test@msn.com     091234567 XXX
+
+蕭OO  test@yahoo.com.tw 091234567 XXX
+蕭OO  陳OO  馬OO  張OO  趙OO
+何OO  陳OO  林OO  羅OO  石OO
+陳OO  林OO  吳OO  李OO  郝OO
+許OO  游OO  楊OO
+[end]
+
+心理女排
+葉OO  test@yahoo.com.tw    091234567 XXX
+張OO  test@hotmail.com    091234567 XXX
+林OO	(空)   091234567 XXX
+葉OO  test@yahoo.com.tw    091234567 XXX
+
+葉OO  杜OO  林OO  張OO  張OO
+蘇OO  楊OO  顏OO  王OO  黃OO
+[end]
+
+資管女排
+賴OO  test@hotmail.com 091234567 XXX
+沈OO  test@hotmail.com    091234567 XXX
+
+涂OO  test@hotmail.com   091234567 XXX
+沈OO  葉OO  詹OO  陳OO  賴OO
+廖OO  趙OO  涂OO  賴OO  高OO
+夏OO  林OO  張OO  陳OO  邱OO
+陳OO
+[end]
+
+經濟女排
+呂OO  test@hotmail.com    091234567 XXX
+蔡OO  test@hotmail.com   091234567 XXX
+
+呂OO  test@hotmail.com    091234567 XXX
+呂OO  鄭OO  張OO  吳OO  吳OO
+莊OO  王OO  林OO  林OO  甘OO
+蔡OO
+[end]
+
+地環女排
+潘OO  test@hotmail.com      091234567 XXX
+游OO  test@hotmail.com 091234567
+
+吳OO  test@ccu.edu.tw    091234567 XXX
+吳OO  莊OO  許OO  何OO  甯OO
+蔣OO  賴OO  游OO  余OO  蘇OO
+陳OO
+[end]
+
+勞工女排
+李OO  test@hotmail.com   091234567 XXX
+劉OO  test@hotmail.com   091234567 XXX
+
+陳OO  test@hotmail.com  091234567 XXX
+陳OO  李OO  楊OO  李OO  楊OO
+莊OO  王OO  邱OO  江OO  黃OO
+陳OO  周OO  黃OO  吳OO  賴OO
+詹OO  許OO  葉OO  何OO  吳OO
+蘇OO  黃OO  王OO  吳OO  蘇OO
+[end]
+
+化工女排
+周OO  test@hotmail.com     091234567 XXX
+郭OO  test@hotmail.com  091234567
+
+高OO  test@hotmail.com     091234567 XXX
+高OO  郭OO  林OO  邱OO  王OO
+蕭OO  周OO  吳OO  李OO  李OO
+洪OO 周OO
+[end]
+
+資工女排
+陳OO  test@yahoo.com.tw 091234567 XXX
+何OO  test@yahoo.com.tw  091234567 XXX
+
+李OO  test@hotmail.com   091234567 XXX
+李OO  范OO  陳OO  陳OO  何OO
+李OO  王OO  張OO  李OO  許OO
+張OO  林OO  陳OO  徐OO  崔OO
+謝OO
+[end]
+
+財金大妞妞隊
+李OO  test@hotmail.com   091234567
+孫OO  test@hotmail.com 091234567
+
+蔡OO  test@hotmail.com 091234567 XXX
+蔡OO  孫OO  郭OO  宋OO  郭OO
+李OO  黃OO  蔡OO  高OO
+[end]
+
+財金小妞妞隊
+瞿OO   (空) 091234567
+易OO   (空) 091234567
+
+蘇OO  test@yahoo.com.tw    091234567
+瞿OO  易OO  陳OO  林OO  蘇OO
+吳OO  謝OO  蘇OO
+[end]
+
+政治女排
+劉OO  test@hotmail.com 091234567 XXX
+葉OO  test@hotmail.com  091234567 XXX
+
+黃OO  test@hotmail.com    091234567 XXX
+劉OO  洪OO  楊OO  鄭OO  陳OO
+張OO  方OO 高OO  林OO  劉OO
+葉OO  林OO  王OO  吳OO  劉OO
+黃OO  蔡OO  黎OO  周OO  黃OO
+廖OO  何OO  王OO
+[end]
+
+成教女排
+陳OO  test@hotmail.com  091234567 XXX
+黃OO  test@hotmail.com  091234567 XXX
+江OO  test@ccu.edu.tw     091234567 XXX
+陳OO  test@hotmail.com  091234567 XXX
+黃OO  陳OO  吳OO  褚OO  彭OO
+江OO  陳OO  林OO  吳OO  李OO
+王OO  姜OO  岳OO  方OO  曾OO
+沈OO  林OO  洪OO  吳OO  張OO
+鄧OO  劉OO
+[end]
+
+會計女排
+楊OO  test@hotmail.com    091234567 XXX
+游OO  test@hotmail.com 091234567 XXX
+
+傅OO  test@hotmail.com  091234567 XXX
+王OO  傅OO  游OO  羅OO  陳OO
+蔡OO  謝OO  周OO  余OO  朱OO
+王OO  楊OO  潘OO  陳OO  王OO
+王OO  樊OO  賴OO  郭OO  戴OO
+簡OO  鄭OO  余OO  陳OO  林OO
+蔡OO
+[end]
+
+犯防女排
+陳OO  test@hotmail.com  091234567 XXX
+張OO  test@hotmail.com    091234567  XXX
+
+陳OO  test@hotmail.com  091234567 XXX
+陳OO  彭OO  黃OO  張OO  黃OO
+張OO  林OO  陳OO  吳OO  莊OO
+張OO  詹OO  梁OO  吳OO  柯OO
+翁OO  黃OO  黃OO  黃OO  陳OO
+羅OO
+[end]
+
+歷史女排
+何OO  test@yahoo.com.tw  091234567
+林OO  test@hotmail.com    091234567
+
+陳OO  test@msn.com  091234567 XXX
+陳OO  何OO  簡OO  楊OO  洪OO
+林OO  黃OO  葉OO  黃OO  陸OO
+鄭OO  方OO  林OO  鄭OO  傅OO
+江OO  李OO  陳OO  楊OO  林OO
+洪OO  林OO
+[end]
+
+外文女排
+林OO  test@hotmail.com  091234567 XXX
+郭OO test@yahoo.com.tw  091234567 XXX
+柯OO  test@hotmail.com     091234567
+林OO  test@hotmail.com  091234567 XXX
+林OO  郭OO  柯OO  黃OO  吳OO
+董OO  鍾OO  林OO  鍾OO  梁OO
+黃OO  林OO  王OO  林OO  葉OO
+姜OO  林OO  周OO  曾OO  陳OO
+張OO  黃OO  鄭OO
+[end]
+
+傳播正MAN隊
+陳OO  test@hotmail.com   091234567 XXX
+
+李OO  test@hotmail.com   091234567 XXX
+簡OO  test@ccu.edu.tw   091234567 XXX
+陳OO  test@hotmail.com   091234567 XXX
+陳OO  簡OO  李OO  郭OO  林OO
+曾OO  蔡OO  連OO  李OO  賴OO
+黃OO  謝OO  黃OO  賴OO
+[end]
+
+社福女排
+李OO  test@hotmail.com     091234567 XXX
+黃OO  test@hotmail.com   091234567 XXX
+
+李OO  test@hotmail.com     091234567 XXX
+李OO  陳OO  賴OO  黃OO  葉OO
+林OO  趙OO  李OO  林OO  石OO
+陳OO  嚴OO  侯OO  李OO  王OO
+[end]
+
+數學女排
+張OO  test@yahoo.com.tw   091234567 XXX
+鄒OO  test@hotmail.com   091234567 XXX
+
+張OO  test@yahoo.com.tw   091234567 XXX
+張OO  鄒OO  李OO  林OO  賴OO
+謝OO  趙OO  吳OO
+[end]

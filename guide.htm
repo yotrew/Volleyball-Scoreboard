@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>V聯盟Web管理者使用手冊</title>
+</head>
+
+<body>
+<p>&nbsp;</p>
+<p><font size=+2>A. 網站管理者</font></p>
+
+<ol>
+  <li><font size=+1>上傳檔案</font></li>
+  <ol type="a">
+  <li>超連結為html檔</li><br>
+   &nbsp;&nbsp;依照超連結檔名直接上傳同檔名即可,ex. "排球聯盟公定原則"所對應的檔名為"rule.htm"<br>
+   &nbsp;&nbsp;所以直接上傳名為"rule.htm"即可更新"排球聯盟公定原則"<br>
+  <li>超連結為php檔(程式)</li><br>
+  &nbsp;&nbsp;必須所依照所規定檔名上傳(參照"相關檔案")
+ </ol><br>
+  <li><font size=+1>相關檔案</font></li>
+    <ol type="a">
+	  <li>各隊資訊</li><br>
+	  &nbsp;&nbsp;各隊資訊有三個檔案 (a) teams.txt (b) teams_boy.txt (c) teams_girl.txt<br>
+	  &nbsp;&nbsp;teams.txt的格式如下: <br>
+	  &nbsp;&nbsp;(檔案第一行為"boy",第二行開始為男排各隊隊名,一行一隊,"girl"分隔男排和女排,檔案最後為[end])<br>
+	  &nbsp;&nbsp;(menu會去讀teams.txt將各隊隊名列出來以供點選)
+	  <pre>
+	  boy                   boy 
+	  ...                   大機機隊
+	  ...                   小機機隊
+	  ...                   ...
+	  girl                  girl
+	  ...                   企管大女
+	  ...                   企管小女
+	  ...                   ...
+	  [end]                 [end]
+	  </pre>
+	  <br>
+	  teams_boy.txt和teams_girl.txt格式如下:<br>
+	  (若沒有第二聯絡人或第三聯絡人則以空行)<br>
+	  (隊員每行五個)<br>
+	  (輸入完一隊後空一行再輸入下一隊)<br>
+	  (沒有MSN帳號或電話則以"(空代替)" ex. 大空翼 (空) 091234567 xxx )
+	  <pre>
+	  (隊名)
+	  (第一聯絡人)  (MSN帳號)  (電話)   (bala的ID)
+	  (第二聯絡人)  (MSN帳號)  (電話)   (bala的ID)
+	  (第三聯絡人)  (MSN帳號)  (電話)   (bala的ID)
+	  [隊長]        (MSN帳號)  (電話)   (bala的ID)
+	  (隊員名字) (隊員名字) (隊員名字) (隊員名字) (隊員名字)
+	  (隊員名字) (隊員名字) (隊員名字) (隊員名字) (隊員名字)
+	  ...
+	  [end]
+	  
+	  {下一隊資訊}
+	  ...
+	  </pre><br>
+	  <li>賽程</li>
+	  賽程檔案名稱格式為weekxx.htm,xx為週別<br>
+	  ex. 第一週賽程檔案名稱為 week01.htm<br>
+	  第二週賽程檔案名稱為 week02.htm<br>
+	  以此類推.<br>
+	  <font color=red><b>季後賽檔名為playoff.htm</b></font><br>
+	  <li>組別</li>
+	  組別記錄檔為group.txt,一行輸入一組,前為組別名後為戰績記錄檔名<br>
+	  <pre>
+	  ex. 男排2組 女排2組則輸入如下格式:
+	  男排A組 boy_a
+      男排B組 boy_b
+      女排A組 girl_a
+      女排B組 girl_b
+	  </pre>
+	</ol>
+	<li><font size=+1>戰績</font></li>
+	<ol type="a">
+	<li>戰績表新增</li>
+	先選擇組別,然後輸入那一組的總隊數,再輸那一組的各隊名稱(以空格做區隔)
+	<li>戰績(分數)新增/修改</li>
+	(依照網頁介面輸入即可,輸入分數較少一方,另一方分數會自動產生)
+	</ol><br>
+	<li>Unicode問題</li><br>
+	先使用"HTML文件外字相容轉換器"將字轉成代碼,然後以代碼取代字<br>
+	ex. 賴(方布)綺 -> 賴& #26046;綺 -> 賴&#26046;綺<br>
+</ol>
+<br><br>
+<p><font size=+2>B. 程式開發者</font></p>
+<ol>
+	<li>目標</li><br>
+	達到全面自動化目標<br>
+  <li>PHP</li><br>
+  PHP傳遞資料問題解決<br>
+  php.ini中設定 register_global = On<br>
+</ol>
+</body>
+</html>

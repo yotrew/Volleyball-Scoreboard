@@ -1,0 +1,185 @@
+大機機隊
+廖OO  test@yahoo.com.tw  091234567  XXX
+康OO  test@hotmail.com  091234567  XXX
+張OO  test@hotmail.com  091234567
+周OO  張OO  廖OO  李OO  王OO
+吳OO  王OO  江OO  余OO  廖OO
+詹OO  江OO  董OO
+[end]
+小機機隊
+陳OO  test@hotmail.com  091234567
+徐OO  test@hotmail.com  091234567
+陳OO  test@ms59.hinet.net  091234567
+康OO  陳OO  陳OO  高OO  周OO
+陳OO  徐OO  陳OO  林OO  楊OO
+尤OO  陳OO  黃OO  鍾OO  張OO
+[end]
+電機男排
+鄧OO  test@msn.com  091234567  XXX
+林OO  test@msn.com  091234567  XXX
+鄧OO  test@msn.com  091234567  XXX
+邱OO  丁OO  黃OO  楊OO  楊OO
+林OO  徐OO  蔡OO  張OO  鄭OO
+李OO  周OO  陳OO
+[end]
+通訊男排
+陳OO  test@hotmail.com  091234567  XXX
+黃OO  091234567
+陳OO  test@hotmail.com  091234567  XXX
+陳OO  章OO  黃OO  楊OO  江OO
+陳OO  張OO  陳OO  陳OO  許OO
+楊OO  姚OO  范OO  韓OO  洪OO
+蔡OO  黃OO  蔡OO  章OO  吳OO
+[end]
+哲學男排
+黃OO  test@yahoo.com.tw  091234567  XXX
+李OO  test@yahoo.com.tw  091234567  XXX
+黃OO  test@yahoo.com.tw  091234567  XXX
+黃OO  張OO  余OO  林OO  蔡OO
+黃OO  阮OO  李OO  陳OO  蘇OO
+王OO  蔡OO  宋OO  張OO  劉OO
+謝OO  莊OO  張簡OO
+[end]
+化生男排
+葉OO  test@msn.com  091234567  XXX
+葉OO  test@msn.com  091234567  XXX
+葉OO  李OO  高OO  白OO  江OO
+彭OO  江OO  鍾OO  劉OO  黃OO
+黃OO  蔡OO  蘇OO  劉OO  賈OO
+楊OO  王OO  許OO  張OO  林OO
+林OO
+[end]
+物理男排
+徐OO  test@mail2000.com.tw  091234567  XXX
+溫OO  test@hotmail.com  091234567  XXX
+陳OO  test@hotmail.com  091234567  XXX
+徐OO  溫OO  陳OO  楊OO  王OO
+蘇OO  李OO  張OO  趙OO  鄭OO
+蔡OO  李OO  廖OO  楊OO  許OO
+晉OO  林OO  李OO  蘇OO  葉OO
+陳OO  林OO  郭OO  吳OO  范姜OO
+[end]
+心理男排
+林OO  test@msa.hinet.net  091234567  XXX
+陳OO  test@msn.com  091234567
+胡OO  test@hotmail.com  091234567  XXX
+林OO  test@msa.hinet.net  091234567  XXX
+林OO  陳OO  胡OO  賴OO  陳OO
+籃OO  趙OO  劉OO  黃OO  周OO
+林OO  黃OO  羅OO  陳OO  林OO
+[end]
+資管男排
+黃OO  test@msa.hinet.net  091234567  XXX
+王OO  test@yahoo.com.tw  091234567  XXX
+周OO  test@yahoo.com.tw  091234567  XXX
+黃OO  test@msa.hinet.net  091234567  XXX
+黃OO  王OO  周OO  趙OO  張OO
+楊OO  羅OO  黃OO  林OO  楊OO
+劉OO  范OO
+[end]
+經濟男排
+鄭OO  test@hotmail.com  091234567  XXX
+景OO  test@hotmail.com  091234567  XXX
+方OO  test@hotmail.com  091234567  XXX
+鄭OO  test@hotmail.com  091234567  XXX
+鄭OO  景OO  劉OO  劉OO  陳OO
+張OO  張OO  呂OO  鄭OO  林OO
+周OO  王OO  徐OO  黃OO  陳OO
+沈OO  徐OO  陳OO
+[end]
+地環男排
+劉OO  test@hotmail.com  091234567
+許OO  test@hotmail   091234567  XXX
+郭OO  test@hotmail.com  091234567  XXX
+郭OO  徐OO  吳OO  呂OO  傅OO
+趙OO  劉OO  黃OO  許OO  古OO
+沈OO  許OO  吳OO  廖OO  王OO
+蕭OO  林OO
+[end]
+勞工男排
+黃OO  test@msn.com  091234567  XXX
+林OO  test@hotmail.com  091234567  XXX
+方OO  test@yahoo.com.tw  091234567  XXX
+方OO  黃OO  林OO  謝OO  劉OO
+張OO  徐OO  戴OO  林OO  賴OO
+陳OO  林OO  朱OO  危OO  陳OO
+謝OO  葉OO
+[end]
+化工男排
+陳OO  test@hotmail.com  091234567  XXX
+沈OO  test@hotmail.com  091234567  XXX
+余OO  test@hotmail.com  091234567  XXX
+余OO  陳OO  沈OO  吳OO  李OO
+吳OO  楊OO  陳OO  柯OO  孟OO
+謝OO  賴OO  邱OO  王OO  李OO
+江OO  楊OO  張OO  陳OO  洪OO
+[end]
+資工男排
+洪OO  test@yahoo.com.tw  091234567  XXX
+郭OO  test@hotmail.com  091234567  XXX
+陳OO  test@yahoo.com.tw  091234567  XXX
+陳OO  洪OO  郭OO  林OO  徐OO
+林OO  張OO  張OO  李OO  蕭OO
+何OO  施OO  連OO  許OO  詹OO
+李OO  何OO  李OO  呂OO  李OO
+陳OO  詹OO  鄭OO  游OO
+[end]
+政治男排
+王OO  test@hotmail.com  091234567  XXX
+顏OO  test@hotmail.com  091234567  XXX
+王OO  test@hotmail.com  091234567  XXX
+王OO  翁OO  顏OO  蘇OO  吳OO
+楊OO  廖OO  胡OO  洪OO  陳OO
+李OO  張OO  劉OO  鄭OO  呂OO
+劉OO  顏OO
+[end]
+中文男排
+蔡OO  test@yahoo.com.tw  091234567  XXX
+賴OO  test@hotmail.com  091234567  XXX
+蔡OO  test@yahoo.com.tw  091234567  XXX
+蔡OO  賴OO  彭OO  黃OO  蔡OO
+王OO  廖OO  陳OO  王OO  蔡OO
+吳OO  黃OO  池OO  陳OO
+[end]
+法數隊
+林OO  test@hotmail.com  091234567
+劉OO  test@hotmail.com  091234567
+林OO  test@hotmail.com  091234567
+林OO  吳OO  王OO  江OO  劉OO
+何OO  陳OO  黃OO  施OO  簡OO
+李OO
+[end]
+法律男排
+陳OO  test@hotmail.com  091234567  XXX
+蔡OO  test@hotmail.com  091234567  XXX
+蔡OO  陳OO  胡OO  林OO  楊OO
+張OO  張OO
+[end]
+財金男排
+林OO  test@hotmail.com  091234567  XXX
+林OO  test@hotmail.com  091234567  XXX
+林OO  test@hotmail.com  091234567  XXX
+吳OO  林OO  林OO  洪OO  徐OO
+侯OO  鄭OO  張OO  蕭OO  周OO
+林OO	謝OO
+[end]
+企管男排
+高OO  test@hotmail.com  091234567
+陳OO  test@pcshme.coom.tw  091234567
+趙OO  test@hotmail.com  091234567  XXX
+趙OO  陳OO  張OO  李OO  吳OO
+呂OO  陳OO  鄭OO  賴OO  陳OO
+高OO  蘇OO  陳OO  黃OO  葉OO
+陳OO  孫OO  林OO  黃OO  陽OO
+王OO  周OO
+[end]
+外文男排
+呂OO  test@hotmail.com  091234567  XXX
+林OO  test@yahoo.com.tw  091234567  XXX
+張OO  test@hotmail.com  091234567  XXX
+呂OO  test@hotmail.com  091234567  XXX
+呂OO  林OO  張OO  賴OO  王OO
+黃OO  郭OO  袁OO  羅OO  翁OO
+黃OO  鄭OO  魏OO  林OO  李OO
+柯OO  陳OO
+[end]
