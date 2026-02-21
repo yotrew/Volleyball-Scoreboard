@@ -7,6 +7,9 @@ if(!isset($_SESSION['pro']) || $_SESSION['pro']>5)
 	echo "你的權限不足!!\n";
 	exit;
 }
+$team_name="";
+if(isset($_POST["team_name"]))
+	$team_name=$_POST["team_name"];
 $gfilename="group.txt";
 $fp=fopen($gfilename,"r");
 $i=0;
@@ -59,7 +62,8 @@ if($team_name!="" && $deduction!="")
 	{
 		$teams_amount[$i]=fgets($fp,5);
 		$teams=fgets($fp,$teams_amount[$i]*10+1);//隊名長度5個中文字
-		$teams_name=split (" ",chop($teams),$teams_amount[$i]);		
+		//$teams_name=split (" ",chop($teams),$teams_amount[$i]);		
+		$teams_name = explode(" ", rtrim($teams), $teams_amount[$i]); //PHP 7.0 later
 		for($j=0;$j<$teams_amount[$i];$j++)
 		{
 		  if(!strcmp(trim($teams_name[$j]),trim($team_name)))
@@ -68,7 +72,8 @@ if($team_name!="" && $deduction!="")
 	  		fputs($fp1,$teams_amount[$i]);
 	  		fputs($fp1,$teams);
 	  		$tmp=fgets($fp,$teams_amount[$i]*3+1); //扣分最多為兩位數
-	  		$tmp=split (" ",chop($tmp),$teams_amount[$i]);	
+	  		//$tmp=split (" ",chop($tmp),$teams_amount[$i]);	
+			$tmp = explode(" ", rtrim($tmp), $teams_amount[$i]); //PHP 7.0 later
 	  		for($k=0;$k<$teams_amount[$i];$k++)
 	  		{
 	  			if($k==$j)
@@ -124,7 +129,8 @@ for($i=0;$i<$gamount;$i++)
 	 for($j=0;$j<$gamount;$j++)
 	 {
 	 	echo "<option value=\"\">---".$gname[$j]."---</option>\n";
-	   $teams_name=split (" ",chop($teams[$j]),$teams_amount[$j]);
+	    //$teams_name=split (" ",chop($teams[$j]),$teams_amount[$j]);
+		$teams_name = explode(" ", rtrim($teams[$j]), $teams_amount[$j]); //PHP 7.0 later
 		for($i=0;$i<$teams_amount[$j];$i++)
 		{
 			echo "<option value=\"$gfile[$j]".$teams_name[$i]."\">".$teams_name[$i]."</option>\n";
