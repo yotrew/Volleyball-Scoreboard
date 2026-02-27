@@ -1,19 +1,31 @@
 <?
 include 'function.php';
 check_login();
-session_start();
-if($_SESSION['pro']>10)
+#session_start();
+if(!isset($_SESSION['pro']) || $_SESSION['pro']>10)
 {
-	echo "§AªºÅv­­¤£¨¬!!\n";
+	echo "ä½ çš„æ¬Šé™ä¸è¶³!!\n";
 	exit;
 }
+$gname="";
+$group="";
+$team1="team1";
+$team2="team2";
+if(isset($_POST["gname"]))
+	$gname=$_POST["gname"];
+if(isset($_POST["group"]))
+	$group=$_POST["group"];
+if(isset($_POST["team1"]))
+	$team1=$_POST["team1"];
+if(isset($_POST["team2"]))
+	$team2=$_POST["team2"];
 ?>
 <html>
 <head>
-<title>¤À¼Æ¦^³ø¤Î­×§ï</title>
+<title>åˆ†æ•¸å›å ±åŠä¿®æ”¹</title>
 <style type="text/css">
 <!--
-.style1 {font-family: "¼Ğ·¢Åé"}
+.style1 {font-family: "æ¨™æ¥·é«”"}
 body {
         background-image: url();
 }
@@ -22,58 +34,81 @@ body {
 <?
 $fp=fopen($group.".txt","r");
 if(!$fp)
-        echo "<br><br><center><font size=+2 color=#EE1111>".$gname."¾ÔÁZªí¤£¦s¦b</font></center>";
+        echo "<br><br><center><font size=+2 color=#EE1111>".$gname."æˆ°ç¸¾è¡¨ä¸å­˜åœ¨</font></center>";
 else
 {//else 1
 	$amount=fgets($fp,5);
 	
-	//¶¤¦W¤­­Ó¤¤¤å¦r,©Ò¥H¬O10 bytes,¦A¥[ªÅ¥Õ´N11bytes
+	//éšŠåäº”å€‹ä¸­æ–‡å­—,æ‰€ä»¥æ˜¯10 bytes,å†åŠ ç©ºç™½å°±11bytes
 	$tmp=fgets($fp,($amount*11+2));
 	
 	$teams_str=$tmp;
-	$teams=split (" ",chop($tmp),$amount);
+	//$teams=split (" ",chop($tmp),$amount);
+	$teams = explode(" ", rtrim($tmp), $amount); //PHP 7.0 later
 
-  //¦©¤À
+  //æ‰£åˆ†
   $tmp=fgets($fp,($amount*3+2));
   $deduction_str=$tmp;
 	//$deduction=split (" ",chop($tmp),$amount);
 	
 	//$temps[$amount-1]=strtr($temps[$amount-1],"\n"," ");
-        //parse score¸ÑªR¹ï¾Ô¤À¼Æ
+        //parse scoreè§£æå°æˆ°åˆ†æ•¸
         for($i=0;$i<$amount;$i++)
         {
                 for($j=0;$j<$amount;$j++)
                 {
-                        if($j<=$i)//¹ï¨¤½u¥H¤Uªº¥h±¼
+                        if($j<=$i)//å°è§’ç·šä»¥ä¸‹çš„å»æ‰
                                 continue;
                         if(feof($fp))
                                 break;
                         $tmp=rtrim(fgets($fp,26));//8*3+2
-                        $score[$i*$amount+$j]=split (" ",$tmp,$amount);
+                        //$score[$i*$amount+$j]=split (" ",$tmp,$amount);
+						$score[$i * $amount + $j] = explode(" ", $tmp, $amount); //PHP 7.0 later
                 }
                 if(feof($fp))
                         break;
         }
-}//else 1 end
 fclose($fp);	//$fp=@fopen($group.".txt","r");
+}//else 1 end
 
-//§ä¥X¹ï¾Ô¶¤¥î
+
+//æ‰¾å‡ºå°æˆ°éšŠä¼
 for($i=0;$i<$amount;$i++)
 {
-	if(!strcmp($teams[$i],$team1))
+	//if(!strcmp($teams[$i],$team1))
+	if ($teams[$i] === $team1)  //PHP 8.1 later	
 	{
 		$ai=$i;
 		continue;
 	}
-	if(!strcmp($teams[$i],$team2))
+  	//if(!strcmp($teams[$i],$team2))
+	if ($teams[$i] === $team2) //PHP 8.1 later
 	{
 		$aj=$i;
 	}
 }
 
-//­pºâ¨C³õÄ¹ªº§½¼Æ
+//è¨ˆç®—æ¯å ´è´çš„å±€æ•¸
 $gs1=0;
 $gs2=0;
+$s1=0;
+$s2=0;
+$s3=0;
+$s4=0;
+$s5=0;
+$s6=0;
+if(isset($_POST['s1']))
+	$s1=$_POST['s1'];
+if(isset($_POST['s2']))
+	$s2=$_POST['s2'];
+if(isset($_POST['s3']))
+	$s3=$_POST['s3'];
+if(isset($_POST['s4']))
+	$s4=$_POST['s4'];
+if(isset($_POST['s5']))
+	$s5=$_POST['s5'];
+if(isset($_POST['s6']))
+	$s6=$_POST['s6'];
 if($s1 > $s2)
 	$gs1++;
 else
@@ -90,16 +125,16 @@ if($s5!=0 || $s6!=0)
 		$gs2++;
 }
 
-//°O¿ı¤À¼Æ
+//è¨˜éŒ„åˆ†æ•¸
 $error=0;
 if($ai==$aj)
-	$error=1;	//§O¶}ª±¯º¤F!¦Û¤v¥´¦Û¤v
+	$error=1;	//åˆ¥é–‹ç©ç¬‘äº†!è‡ªå·±æ‰“è‡ªå·±
 if($s5!=0 || $s6!=0)
 	if( abs($s1-$s2)<2 || abs($s3-$s4)<2 || abs($s5-$s6)<2 )
-		$error=2;	//¨C§½¤À¼Æ¥²¶·®t¨â¤À¤w¤W!!(3§½)
+		$error=2;	//æ¯å±€åˆ†æ•¸å¿…é ˆå·®å…©åˆ†å·²ä¸Š!!(3å±€)
 else
 	if( abs($s1-$s2)<2 || abs($s3-$s4)<2)
-		$error=3;	//¨C§½¤À¼Æ¥²¶·®t¨â¤À¤w¤W!!(2§½)
+		$error=3;	//æ¯å±€åˆ†æ•¸å¿…é ˆå·®å…©åˆ†å·²ä¸Š!!(2å±€)
 if(($gs1+$gs2)==3 && ($gs1==0 && $gs2==0))
 	$error=3;
 if(($gs1+$gs2)>3)
@@ -135,7 +170,7 @@ if($error==0)
 		$score[$ai*$amount+$aj][6]=$gs1;
 		$score[$ai*$amount+$aj][7]=$gs2;
 	}
-	//¼g¤JÀÉ®×
+	//å¯«å…¥æª”æ¡ˆ
 	$fp=fopen($group.".txt","w");
 	fputs($fp,$amount);
 	fputs($fp,$teams_str);
@@ -144,7 +179,7 @@ if($error==0)
         {
                 for($j=0;$j<$amount;$j++)
                 {
-                        if($j<=$i)//¹ï¨¤½u¥H¤Uªº¥h±¼
+                        if($j<=$i)//å°è§’ç·šä»¥ä¸‹çš„å»æ‰
                                 continue;
 			for($k=0;$k<7;$k++)
 			{
@@ -155,14 +190,14 @@ if($error==0)
 	}
 	fclose($fp);
 
-	//¦w¥ş¾÷¨î,°O¿ı­×§ï¤Hªº¸ê°T
-	//Clientºİ¦³³]©wProxy®É,PHPÀô¹ÒÅÜ¼ÆHTTP_X_FORWARDED_FOR´N·|¦³­È
+	//å®‰å…¨æ©Ÿåˆ¶,è¨˜éŒ„ä¿®æ”¹äººçš„è³‡è¨Š
+	//Clientç«¯æœ‰è¨­å®šProxyæ™‚,PHPç’°å¢ƒè®Šæ•¸HTTP_X_FORWARDED_FORå°±æœƒæœ‰å€¼
 	$ip_client_ary=getenv("HTTP_X_FORWARDED_FOR");
 	if($ip_client_ary==NULL)
 		$ip_client=getenv("REMOTE_ADDR");
 	else{
-		//¥t¥~­n¦Ò¼{¨ì·|¦³FORWARDED¦h­Ó¦a¤è¡A³Ì«e­±§Y¬O¯u¹êIP
-		$ip_client_ary=explode(`,`,$ip_client_ary,2);
+		//å¦å¤–è¦è€ƒæ…®åˆ°æœƒæœ‰FORWARDEDå¤šå€‹åœ°æ–¹ï¼Œæœ€å‰é¢å³æ˜¯çœŸå¯¦IP
+		$ip_client_ary=explode(',',$ip_client_ary,2);
 		$ip_client=$ip_client_ary[0];
 	}
 	//$time = getdate();
@@ -188,18 +223,18 @@ echo "<meta http-equiv=\"refresh\" content=\"3; url=score.php?group=".$group."\"
 	switch($error)
 	{
 		case 0:
-			echo "¤À¼Æ·s¼W©Î­×§ï§¹¦¨<br>\n";
+			echo "åˆ†æ•¸æ–°å¢æˆ–ä¿®æ”¹å®Œæˆ<br>\n";
 			break;
 		case 1:
-			echo "§O¶}ª±¯º¤F!¦Û¤v¥´¦Û¤v<br>\n";
+			echo "åˆ¥é–‹ç©ç¬‘äº†!è‡ªå·±æ‰“è‡ªå·±<br>\n";
 			break;
 		case 2:
 		case 3:
-			echo "¨C§½¤À¼Æ¥²¶·®t¨â¤À¤w¤W!!<br>\n";
+			echo "æ¯å±€åˆ†æ•¸å¿…é ˆå·®å…©åˆ†å·²ä¸Š!!<br>\n";
 			break;
 		default:
 	}
-	echo "<a href=score.php?group=".$group.">¦^¾ÔÁZªí</a>\n";
+	echo "<a href=score.php?group=".$group.">å›æˆ°ç¸¾è¡¨</a>\n";
 ?>
 </font>
 <?
